@@ -1,3 +1,6 @@
+build:
+	./node_modules/.bin/gulp
+
 dev:
 	./node_modules/.bin/gulp dev
 
