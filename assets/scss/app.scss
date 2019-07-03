@@ -10,3 +10,151 @@
 @import "general";
 @import "layout";
 @import "module";
+
+.container {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.header {  
+    &-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__link {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+            color: #36424B;
+            transition: all .3s;
+            margin-left: 25px;
+
+            &:hover {
+                color: lighten($color: #36424B, $amount: 10%);
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 33px 0 32px 29px;
+    }
+
+    &__search-icon {
+        margin-left: 30.35px;
+    }
+
+    &-right-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.preview {
+    position: relative;
+    background: url(../img/fitshop-general-desktop.jpg) 0 0 no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-family: 'Georgia', serif;
+        font-size: 58px;
+        line-height: 66px;
+        color: #36424B;
+        text-transform: uppercase;
+        margin: 141px auto 26px auto;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 43px;
+        color: #36424B;
+        margin-bottom: 181px;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, .4);
+    }
+}
+
+.sub-title {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: #36424B;
+    text-transform: capitalize;
+}
+
+.our-mission {
+    &__title {
+        margin: 72px auto 29px auto;
+    }
+
+    &__content {
+        max-width: 968px;
+        margin: 0 auto;
+    
+        p {
+            margin: 0 0 1.5rem 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #36424B;
+        }
+    }
+}
+
+.our-core-principles {
+    &__title {
+        margin-bottom: 106px;
+        margin-top: 81px;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        height: 112px;
+    }
+
+    &__title {
+        margin-top: 34px;
+        margin-bottom: 21px;
+        font-weight: 700;
+        font-family: 'Georgia', serif;
+        font-size: 40px;
+        line-height: 45px;
+        color: #36424B;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        color: #36424B;
+    }
+}
